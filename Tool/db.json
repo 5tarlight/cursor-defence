@@ -1,0 +1,9 @@
+{
+    "host" : "127.0.0.1",
+    "user" : "root",
+    "password" : "ckfejrvkdl4!",
+    "database" : "lofence",
+    "port" : 3306,
+
+    "create" : ["name", "id", "pw", "lv"]
+}
