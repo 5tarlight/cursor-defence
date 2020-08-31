@@ -1,5 +1,5 @@
 var express = require('express')
-//var parser = require('body-parser')
+var bodyParser = require('body-parser')
 const DBManager = require('../Tool/DBManager')
 const dice = (min, max) => {
   return Math.floor( Math.random() * (max - min + 1 ) ) + min;
@@ -21,7 +21,7 @@ var Server = express()
 
 Server.use(express.static('public'));
 Server.use(express.urlencoded({ extended : true }))
-//Server.use(express.json())
+Server.use(bodyParser.json())
 
 
 Server.listen(80, function(){
